@@ -2,8 +2,14 @@
 #define DEBOUNCE 1
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "MKj4o/lblRx4"
+#define SERIAL_NUMBER "MKj4o/JazdDm"
 #define LAYER_STATE_8BIT
 
 #define RGB_MATRIX_STARTUP_SPD 60
 
+
+
+// Custom QMK Settings
+#define USB_POLLING_INTERVAL_MS 1
+#define FORCE_NKRO
+#define QMK_KEYS_PER_SCAN 4
