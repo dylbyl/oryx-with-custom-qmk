@@ -12,7 +12,8 @@ on:
         type: choice
         options:
           - voyager
-          - moonlander
+          - moonlander/reva
+          - moonlander/revb
           - ergodox_ez
           - ergodox_ez/m32u4/glow
           - ergodox_ez/m32u4/shine
@@ -21,7 +22,7 @@ on:
           - ergodox_ez/stm32/shine
           - planck_ez
           - planck_ez/glow
-        default: moonlander
+        default: moonlander/reva
 
 permissions:
   contents: write
@@ -110,7 +111,7 @@ jobs:
           # Build the layout
           docker run -v ./qmk_firmware:/root --rm qmk /bin/sh -c "
             qmk setup zsa/qmk_firmware -b firmware${{ steps.download-layout-source.outputs.firmware_version }} -y
-            make ${make_prefix}${{ github.event.inputs.layout_geometry }}/reva:${{ github.event.inputs.layout_id }}
+            make ${make_prefix}${{ github.event.inputs.layout_geometry }}:${{ github.event.inputs.layout_id }}
           "
           
           # Find and export built layout          
