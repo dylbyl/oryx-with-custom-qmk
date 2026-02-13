@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,         KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,                                           LALT(KC_TAB),   RSFT(KC_TAB),   KC_TRANSPARENT, KC_UP,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_LEFT_SHIFT,  KC_LEFT_SHIFT,  KC_A,           KC_S,           KC_D,           KC_F,           KC_G,                                                                           KC_F12,         KC_TRANSPARENT, KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_TRANSPARENT, TO(0),          
     KC_TRANSPARENT, KC_LEFT_SHIFT,  KC_Z,           KC_X,           KC_C,           KC_V,                                           KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_LEFT_SHIFT,  KC_LEFT_CTRL,   KC_LEFT_ALT,    KC_TRANSPARENT, KC_F,           KC_TAB,                                                                                                         TO(0),          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_LEFT_SHIFT,  KC_LEFT_CTRL,   KC_LEFT_ALT,    KC_TRANSPARENT, KC_TRANSPARENT, KC_TAB,                                                                                                         TO(0),          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_SPACE,       KC_Z,           KC_B,                           KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
 };
@@ -85,7 +85,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
 
     [3] = { {220,218,204}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {220,218,204}, {0,0,255}, {26,218,204}, {0,255,255}, {0,0,0}, {220,218,204}, {0,255,255}, {26,218,204}, {0,0,255}, {0,0,0}, {209,255,255}, {176,222,255}, {176,222,255}, {86,221,255}, {0,0,0}, {0,0,0}, {0,0,255}, {176,222,255}, {86,221,255}, {0,0,0}, {220,218,204}, {0,255,255}, {0,255,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,255,255}, {0,0,0}, {0,0,0}, {0,255,255}, {220,218,204}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {86,221,255}, {0,0,255}, {49,219,230}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,255}, {49,219,230}, {0,0,0}, {0,0,0}, {86,221,255}, {0,0,255}, {49,219,230}, {0,0,0}, {0,0,0}, {49,222,255}, {49,222,255}, {0,0,0}, {0,0,0}, {0,255,255}, {0,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
-    [4] = { {0,0,255}, {0,255,255}, {176,222,255}, {176,222,255}, {176,222,255}, {0,0,255}, {0,255,255}, {176,222,255}, {176,222,255}, {49,222,255}, {0,0,0}, {86,221,255}, {0,0,255}, {0,0,0}, {49,222,255}, {0,0,0}, {0,0,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {86,221,255}, {0,0,255}, {0,0,0}, {86,221,255}, {0,0,0}, {86,221,255}, {86,221,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,255}, {86,221,255}, {49,222,255}, {0,0,0}, {0,0,0}, {220,218,204}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {176,222,255}, {0,0,0}, {0,0,0}, {0,255,255}, {49,222,255}, {220,218,204}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
+    [4] = { {0,0,255}, {0,255,255}, {176,222,255}, {176,222,255}, {176,222,255}, {0,0,255}, {0,255,255}, {176,222,255}, {176,222,255}, {49,222,255}, {0,0,0}, {86,221,255}, {0,0,255}, {0,0,0}, {49,222,255}, {0,0,0}, {0,0,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {86,221,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {86,221,255}, {86,221,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,255}, {86,221,255}, {49,222,255}, {0,0,0}, {0,0,0}, {220,218,204}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {176,222,255}, {0,0,0}, {0,0,0}, {0,255,255}, {49,222,255}, {220,218,204}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
 };
 
@@ -146,11 +146,11 @@ bool rgb_matrix_indicators_user(void) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-  case QK_MODS ... QK_MODS_MAX: 
-    // Mouse keys with modifiers work inconsistently across operating systems, this makes sure that modifiers are always
-    // applied to the mouse key that was pressed.
-    if (IS_MOUSE_KEYCODE(QK_MODS_GET_BASIC_KEYCODE(keycode))) {
-    if (record->event.pressed) {
+  case QK_MODS ... QK_MODS_MAX:
+    // Mouse and consumer keys (volume, media) with modifiers work inconsistently across operating systems,
+    // this makes sure that modifiers are always applied to the key that was pressed.
+    if (IS_MOUSE_KEYCODE(QK_MODS_GET_BASIC_KEYCODE(keycode)) || IS_CONSUMER_KEYCODE(QK_MODS_GET_BASIC_KEYCODE(keycode))) {
+      if (record->event.pressed) {
         add_mods(QK_MODS_GET_MODS(keycode));
         send_keyboard_report();
         wait_ms(2);
